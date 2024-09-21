@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>SignUp</title>
+    <style>
+      /* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/images/first.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.login {
+    background: rgba(235, 121, 7, 0.9);
+    padding: 20px;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    position: relative;
+    z-index: 1; 
+}
+
+.login_form header {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chekbox {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.chekbox label {
+    margin-left: 5px;
+}
+
+a {
+    display: block;
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #f3f4f4;
+}
+
+.social-icons {
+    margin: 15px 0;
+}
+
+.social-icons a {
+    color:#654908;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+  
+    font-size: 20px;
+}
+
+.facebook:hover { background-color: #007bff; color: #fff;}
+.instagram:hover { background-color: #fff; color: #C13584; }
+.linkedin:hover { background-color: #0077b5;  color: #f2f2f3;}
+.github:hover { background-color: #fff; color: black; }
+#submit{
+    color: white;
+    background-color: #007bff;
+}
+#submit:hover{
+    background-color: #0077b5;
+    color: #fff;
+    font-size: 15px;
+
+}
+#signup{
+    color: white;
+    
+    background-color: #007bff;
+    width: 80px;
+}
+#signup:hover{
+    background-color: #0077b5;
+    color: #fff;
+    font-size: 15px;
+
+}
+
+    </style>
+</head>
+<body>
+    <section class="login">
+        <div class="login_form">
+            <header>Signup Form</header>
+            <form action="#">
+                <input type="text" placeholder="Full Name" required>
+
+                <input type="email" placeholder="Email Address" required>
+                <input type="text" placeholder="Phone no" required>
+
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+
+
+                <div class="icons">
+                    <h4>SignUp With</h4>
+                    <div class="social-icons">
+                        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="github"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <input id="submit" type="submit" value="Signup"/>
+            </form> 
+        </div>
+    </section>
+</body>
+</html>
