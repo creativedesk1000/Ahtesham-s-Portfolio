@@ -283,7 +283,9 @@
                 <div class="image-box">
                     <img draggable="false" src="./images/contact.jpg" alt="">
                 </div>
-                <form id="contact-form">
+                <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="4e432de1-b80d-4d63-ab93-d0d9d13f501f">
+
 
                     <div class="form-group">
                         <div class="field">
@@ -303,6 +305,9 @@
                             <i class="fas fa-comment-dots"></i>
                         </div>
                     </div>
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <input type="hidden" name="redirect" value="index.html">
+
                     <div class="button-area">
                         <button type="submit">
                             Submit <i class="fa fa-paper-plane"></i></button>
